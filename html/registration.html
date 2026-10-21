@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Registration</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-<div class="page"><h2>Registration</h2>
-<form class="box" id="regForm">
-<label>Full name</label><input name="fullname" required>
-<label>Email</label><input type="email" name="email" required>
-<label>Phone</label><input name="phone" inputmode="numeric" maxlength="10" required>
-<label>Gender</label><select name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select>
-<label>Date of birth</label><input type="date" name="dob" required>
-<label>Username</label><input name="username" required>
-<label>Password</label><input type="password" name="password" required>
-<label>Confirm password</label><input type="password" name="confirm" required>
-<div class="error" id="regErr"></div><div class="success" id="regOk"></div>
-<button type="submit">Register</button></form></div>
+<div class="page"><h1>registration page</h1>
+<form class="plain" id="regForm">
+<label>full name <input name="fullname" required></label>
+<label>email <input type="email" name="email" required></label>
+<label>phone <input name="phone" inputmode="numeric" maxlength="10" required></label>
+<label>gender</label>
+<div class="radios"><label style="display:inline"><input type="radio" name="gender" value="male"> male</label>
+<label style="display:inline"><input type="radio" name="gender" value="female"> female</label>
+<label style="display:inline"><input type="radio" name="gender" value="other"> pata nhi</label></div>
+<label>date of birth <input type="date" name="dob" required></label>
+<label>username <input name="username" required></label>
+<label>password <input type="password" name="password" required></label>
+<label>confirm password <input type="password" name="confirm" required></label>
+<div class="msg-error" id="regErr"></div><div class="msg-ok" id="regOk"></div>
+<button type="submit">register</button><button type="reset" class="light">clear</button>
+</form></div>
 <script src="../js/main.js"></script>
 </body></html>

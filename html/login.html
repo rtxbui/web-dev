@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-<div class="page"><h2>Login</h2>
-<form class="box" id="loginForm"><label>User Name</label><input name="username" required>
-<label>Password</label><input type="password" name="password" required>
-<div class="error" id="loginErr"></div><button type="submit">Login</button></form>
-<div id="loggedIn" class="box" style="display:none;text-align:center">
-<p class="success">Aap login ho chuke hain, <span id="welcomeName"></span>.</p><button id="logoutBtn">Logout</button></div></div>
+<div class="page"><h1>Login Page</h1>
+<form class="plain" id="loginForm">
+<label><span>User Name:</span> <input name="username" required></label>
+<label><span>Password:</span> <input type="password" name="password" required></label>
+<div class="msg-error" id="loginErr"></div>
+<button type="submit">Login</button><button type="reset" class="light">Clear</button>
+</form>
+<div id="loggedIn" style="display:none"><p class="msg-ok">Aap login ho chuke hain, <b id="who"></b>.</p><button id="logoutBtn">Logout</button></div></div>
 <script src="../js/main.js"></script>
 </body></html>

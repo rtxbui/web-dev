@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cart</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-<div class="page"><h2>Your Cart</h2>
-<p id="emptyMsg" class="empty">Cart khali hai. Catalogue se books add karo.</p>
+<div class="page"><h1>Cart</h1>
+<p id="emptyMsg">Cart khali hai. Catalogue se books add karo.<br><a class="btn" href="catalogue.html">Go to catalogue</a></p>
 <table id="cartTable"><thead><tr><th>Book</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead><tbody id="cartBody"></tbody></table>
-<div class="total" id="totalRow">Total: $<span id="total">0.00</span></div>
-<button id="checkout">Checkout</button> <button class="secondary" id="clearCart">Clear cart</button></div>
+<div id="cartFoot"><div class="total">Total: $<span id="total">0.00</span></div>
+<button id="checkout">Checkout</button><button class="light" id="clearCart">Clear cart</button></div></div>
 <script src="../js/main.js"></script>
 </body></html>
