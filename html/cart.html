@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Cart</title>
-  <link rel="stylesheet" href="../css/catalogue.css">
-</head>
-<body class="flush">
-  <script src="../js/cart.js"></script>
-
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cart</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<div class="page"><h2>Your Cart</h2>
+<p id="emptyMsg" class="empty">Cart khali hai. Catalogue se books add karo.</p>
+<table id="cartTable"><thead><tr><th>Book</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead><tbody id="cartBody"></tbody></table>
+<div class="total" id="totalRow">Total: $<span id="total">0.00</span></div>
+<button id="checkout">Checkout</button> <button class="secondary" id="clearCart">Clear cart</button></div>
+<script src="../js/main.js"></script>
+</body></html>

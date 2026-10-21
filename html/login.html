@@ -1,48 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  <script src="../js/login.js"></script>
-  <style>
- body {
-    margin: 0;
-    height: 100vh;             
-    display: flex;
-    flex-direction: column;    
-    align-items: center;       
-    justify-content: center;   
-  }
-</style>
-</head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-
-  <div class="box" id="loginBox">
-    <h3>Login Page</h3>
-
-    <form id="loginForm" novalidate>
-      <div class="row">
-        <label for="username">User Name:</label>
-        <input type="text" id="username">
-      </div>
-      <div class="row">
-        <label for="password">Password:</label>
-        <input type="password" id="password">
-      </div>
-
-      <input type="submit" value="Submit" class="btn">
-      <input type="reset" value="Reset" class="btn" id="resetBtn">
-    </form>
-  </div>
-
-  <!-- Login ke baad ye dikhega -->
-  <div class="box hidden" id="welcomeBox">
-    <h3 id="welcomeText"></h3>
-    <p>Aap login ho chuke hain.</p>
-    <button class="btn" id="logoutBtn">Logout</button>
-  </div>
-
-</body>
-</html>
-
- 
+<div class="page"><h2>Login</h2>
+<form class="box" id="loginForm"><label>User Name</label><input name="username" required>
+<label>Password</label><input type="password" name="password" required>
+<div class="error" id="loginErr"></div><button type="submit">Login</button></form>
+<div id="loggedIn" class="box" style="display:none;text-align:center">
+<p class="success">Aap login ho chuke hain, <span id="welcomeName"></span>.</p><button id="logoutBtn">Logout</button></div></div>
+<script src="../js/main.js"></script>
+</body></html>

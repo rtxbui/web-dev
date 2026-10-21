@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>bookstore</title>
-  <link rel = "stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookstore</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+<div class="container">
 
-  <div class="container">
+  <div class="header">
+    <div class="logo">📚</div>
+    <div class="title">College Bookstore</div>
+    <div class="user-box" id="userBox"></div>
+  </div>
 
-    <div class = "header">
-      <div class="logo">logo</div>
-      <div class="title">web site name</div>
-    </div>
-
-    <div class="nav">
-      <a class="home" href="html/home.html" target="content">Home</a>
-      <div class="nav-links">
+  <div class="nav">
+    <a class="home" href="html/home.html" target="content">Home</a>
+    <div class="nav-links">
       <a href="html/login.html" target="content">Login</a>
       <a href="html/registration.html" target="content">Registration</a>
       <a href="html/catalogue.html" target="content">Catalogue</a>
-      <a href="html/cart.html" target="content">Cart</a>
+      <a href="html/cart.html" target="content">Cart <span class="badge" id="cartCount">0</span></a>
     </div>
-    </div>
+  </div>
 
-    <div class="main">
-      <div class ="left">
+  <div class="main">
+    <div class="left">
+      <h3>Departments</h3>
       <a href="html/cse.html" target="content">CSE</a>
       <a href="html/ece.html" target="content">ECE</a>
       <a href="html/eee.html" target="content">EEE</a>
       <a href="html/civil.html" target="content">CIVIL</a>
     </div>
-    <iframe name="content" class="content"
-  srcdoc="<style>
-            body { margin:0; height:100vh; display:flex;
-                   align-items:center; justify-content:center;
-                   font-size: 20px; }
-          </style>
-          Description of Website">
-</iframe>
-    </div>
+    <iframe name="content" class="content" src="html/home.html" title="content"></iframe>
   </div>
 
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>
